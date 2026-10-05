@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Same-Day Delivery in Durban | Ricin Xpress</title>
+  <meta name="description" content="Book your Durban same-day courier collection in under two minutes. Get an instant reference, WhatsApp confirmation and a PDF receipt.">
+  <link rel="canonical" href="https://www.ricinxpress.co.za/book.html">
+  <meta property="og:title" content="Book a Same-Day Delivery | Ricin Xpress">
+  <meta property="og:description" content="Fill in your collection and delivery details — we'll take it from there.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,700&family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <script>document.documentElement.className+=" js";window.addEventListener("error",function(){document.documentElement.className=document.documentElement.className.replace(" js","");});</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="track.html" class="nav-link">Track Order</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="track.html" class="btn btn-ghost nav-cta">Track Order</a>
+      </nav>
+      <a href="track.html" class="btn btn-ghost header-cta">Track Order</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="hero-media">
+        <img src="back.jpeg" alt="Parcels loaded into a Ricin Xpress vehicle ready for delivery">
+      </div>
+      <div class="container page-hero-inner">
+        <span class="eyebrow">Book a Delivery</span>
+        <h1 class="page-title">Let's Get It <span class="accent">Moving.</span></h1>
+        <p class="page-lead">Tell us where to collect and where it's going. You'll get an instant reference number, a WhatsApp confirmation and a PDF receipt.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:920px">
+        <form class="form-card animate-on-scroll" id="bookingForm" novalidate>
+          <div class="form-section">
+            <h2 class="form-section-title"><i class="fas fa-user"></i> Your Details</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name <span class="text-red">*</span></label>
+                <input type="text" id="firstName" name="firstName" autocomplete="given-name" maxlength="60" required>
+                <span class="field-error" id="err-firstName"></span>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name <span class="text-red">*</span></label>
+                <input type="text" id="lastName" name="lastName" autocomplete="family-name" maxlength="60" required>
+                <span class="field-error" id="err-lastName"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="text-red">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="067 786 7203" autocomplete="tel" maxlength="20" required>
+              <span class="field-error" id="err-phone"></span>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h2 class="form-section-title"><i class="fas fa-location-dot"></i> Addresses</h2>
+            <div class="form-group">
+              <label for="pickupAddress">Pickup Address <span class="text-red">*</span></label>
+              <textarea id="pickupAddress" name="pickupAddress" rows="3" maxlength="300" placeholder="Street, suburb, city" required></textarea>
+              <span class="field-error" id="err-pickupAddress"></span>
+            </div>
+            <div class="form-group">
+              <label for="dropoffAddress">Drop-off Address <span class="text-red">*</span></label>
+              <textarea id="dropoffAddress" name="dropoffAddress" rows="3" maxlength="300" placeholder="Street, suburb, city" required></textarea>
+              <span class="field-error" id="err-dropoffAddress"></span>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h2 class="form-section-title"><i class="fas fa-clock"></i> Collection</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="collectionDate">Collection Date <span class="text-red">*</span></label>
+                <input type="date" id="collectionDate" name="collectionDate" required>
+                <span class="field-error" id="err-collectionDate"></span>
+              </div>
+              <div class="form-group">
+                <label for="collectionTime">Collection Time <span class="text-red">*</span></label>
+                <select id="collectionTime" name="collectionTime" required>
+                  <option value="">Select a time</option>
+                  <option value="08:00 - 10:00">08:00 - 10:00</option>
+                  <option value="10:00 - 12:00">10:00 - 12:00</option>
+                  <option value="12:00 - 14:00">12:00 - 14:00</option>
+                  <option value="14:00 - 16:00">14:00 - 16:00</option>
+                  <option value="16:00 - 18:00">16:00 - 18:00</option>
+                </select>
+                <span class="field-error" id="err-collectionTime"></span>
+              </div>
+            </div>
+            <p class="muted" style="margin:0"><i class="fas fa-circle-info"></i> Please book at least 1 hour before your preferred collection window.</p>
+          </div>
+
+          <div class="form-section">
+            <h2 class="form-section-title"><i class="fas fa-box"></i> Parcel</h2>
+            <div class="form-group">
+              <label for="itemDescription">Item Description <span class="text-red">*</span></label>
+              <textarea id="itemDescription" name="itemDescription" rows="3" maxlength="500" placeholder="What are we delivering? Include size or weight if relevant." required></textarea>
+              <span class="field-error" id="err-itemDescription"></span>
+            </div>
+            <div class="form-group">
+              <label for="specialInstructions">Special Instructions <span class="muted">(optional)</span></label>
+              <textarea id="specialInstructions" name="specialInstructions" rows="3" maxlength="500" placeholder="Gate codes, contact person, fragile handling…"></textarea>
+              <span class="field-error" id="err-specialInstructions"></span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" id="submitBtn">Submit Order <i class="fas fa-arrow-right"></i></button>
+          <p class="track-note" style="justify-content:center;margin-top:14px"><i class="fas fa-shield-halved"></i> Your information is safe with us and never shared.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="brand"><img src="ricin-wordmark.png" alt="RICIN." class="brand-mark"></span>
+          <p style="margin-top:14px">Safe, same-day deliveries in and around Durban. Your trusted local courier service.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="book.html">Book a Delivery</a></li>
+            <li><a href="track.html">Track Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:0677867203"><i class="fas fa-phone"></i> 067 786 7203</a></li>
+            <li><a href="https://wa.me/27682937167" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> 068 293 7167</a></li>
+            <li><a href="mailto:ricinxpress@outlook.com"><i class="fas fa-envelope"></i> ricinxpress@outlook.com</a></li>
+            <li><i class="fas fa-location-dot"></i> Durban, South Africa</li>
+            <li><a href="login.html">Admin Login <i class="fas fa-arrow-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="year">2026</span> Ricin Xpress. All rights reserved.</span>
+        <span>Durban · South Africa</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
